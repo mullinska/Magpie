@@ -38,6 +38,19 @@ public class Magpie2 {
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0) {
 			response = "Tell me more about your family.";
+		} else if (statement.indexOf("dog") >= 0
+				|| statement.indexOf("cat") >= 0) {
+			response = "Tell me more about your pets.";
+		} else if (statement.indexOf("Mr. Padjen") >= 0) {
+			response = "He sounds pretty ok.";
+		} else if (statement.indexOf("why") >= 0) {
+			response = "Because.";
+		} else if (statement.indexOf("Gabe") >= 0) {
+			response = "Hi Gabe.";
+		} else if (statement.indexOf("school") >= 0) {
+			response = "School gets out at 2:50.";
+		} else if (statement.trim().indexOf("") >= 0) {
+			response = "Please enter a response.";
 		} else {
 			response = getRandomResponse();
 		}
